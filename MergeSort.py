@@ -15,7 +15,7 @@ def merge(l1,l2):
     if len(l1)>0: res+=l1
     elif len(l2)>0: res+=l2
     return res
-    
+
 def merge_sort(nums):
     if len(nums)==1:
         return nums
@@ -25,6 +25,5 @@ def merge_sort(nums):
     return merge(left,right)
 
 if __name__=='__main__':
-    x=list(map(int,input().split(' ')))
+    x=list(map(int,input('Enter list elements with one space: ').split(' ')))
     print(merge_sort(x))
-    
